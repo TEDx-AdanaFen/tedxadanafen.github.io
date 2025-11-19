@@ -19,14 +19,19 @@
     .hero h1 { font-size: 3rem; font-weight: bold; }
     .hero p { font-size: 1.25rem; }
     footer { background: #111; color: #fff; padding: 20px; text-align: center; }
+    .logo-img { height: 50px; margin-right: 10px; }
   </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
+      <img src="images/afl-logo.png" alt="Adana Fen Lisesi Logosu" class="logo-img">
       <a class="navbar-brand text-white" href="#">TEDx Adana Fen</a>
-      <div class="collapse navbar-collapse">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#hakkinda">Hakkında</a></li>
           <li class="nav-item"><a class="nav-link" href="#konusmacilar">Konuşmacılar</a></li>
@@ -85,6 +90,7 @@
       <li class="list-group-item">12:00 — Konuşma 2</li>
     </ul>
   </section>
+
 
   <!-- İletişim -->
   <section id="iletisim" class="container my-5">
