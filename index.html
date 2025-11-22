@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     :root {
-      --brand-red: #e62b1e; /* TEDx kırmızısı */
+      --brand-red: #e62b1e;
       --brand-dark: #0b0b0d;
       --brand-gray: #1a1a1d;
       --text-muted: #a0a4ad;
@@ -26,7 +26,6 @@
     }
     .nav-link { color: #cfd2d8 !important; }
     .nav-link:hover, .nav-link.active { color: var(--brand-red) !important; }
-
     .brand-dot {
       display: inline-block;
       width: .65rem; height: .65rem;
@@ -34,7 +33,6 @@
       border-radius: 50%;
       margin-left: .25rem;
     }
-
     .btn-brand {
       background: var(--brand-red);
       border: none;
@@ -42,7 +40,6 @@
       box-shadow: 0 10px 30px rgba(230, 43, 30, 0.25);
     }
     .btn-brand:hover { background: #cc261a; }
-
     .section {
       padding: 90px 0;
       border-top: 1px solid #1f1f24;
@@ -58,7 +55,6 @@
       letter-spacing: .12rem;
       text-transform: uppercase;
     }
-
     .hero {
       padding: 120px 0 80px 0;
       background:
@@ -75,70 +71,44 @@
       color: var(--text-muted);
       font-size: .9rem;
     }
-
     .card-modern {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: 16px;
     }
-
-    /* Program timeline */
-    .timeline {
-      position: relative;
-      padding-left: 2rem;
-    }
+    .timeline { position: relative; padding-left: 2rem; }
     .timeline::before {
-      content: "";
-      position: absolute;
-      left: .75rem; top: 0; bottom: 0;
+      content: ""; position: absolute; left: .75rem; top: 0; bottom: 0;
       width: 2px; background: #2a2a31;
     }
-    .tl-item {
-      position: relative;
-      margin-bottom: 1.25rem;
-      padding-left: .5rem;
-    }
+    .tl-item { position: relative; margin-bottom: 1.25rem; padding-left: .5rem; }
     .tl-item::before {
-      content: "";
-      position: absolute;
-      left: -1rem; top: .45rem;
-      width: 10px; height: 10px;
-      border-radius: 50%;
-      background: var(--brand-red);
-      box-shadow: 0 0 0 4px rgba(230,43,30,.12);
+      content: ""; position: absolute; left: -1rem; top: .45rem;
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--brand-red); box-shadow: 0 0 0 4px rgba(230,43,30,.12);
     }
     .tl-time { color: var(--text-muted); font-size: .9rem; }
-
-    /* Konuşmacılar */
     .speaker-card {
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 1.25rem;
-      padding: 1.25rem;
+      display: grid; grid-template-columns: 120px 1fr;
+      gap: 1.25rem; padding: 1.25rem;
     }
     .speaker-img {
-      width: 120px; height: 120px;
-      border-radius: 12px;
-      object-fit: cover;
-      background: linear-gradient(135deg, #1f1f24, #141418);
+      width: 120px; height: 120px; border-radius: 12px;
+      object-fit: cover; background: linear-gradient(135deg, #1f1f24, #141418);
       border: 1px solid #26262c;
     }
     .speaker-name { font-weight: 800; }
     .speaker-role { color: var(--text-muted); font-style: italic; }
     .speaker-bio { color: #d9dbe1; }
-
-    /* Mekan */
     .venue-card .badge {
       background: rgba(230,43,30,.12);
       color: #ffb7ae;
       border: 1px solid rgba(230,43,30,.25);
     }
-
-    /* Kadro */
     .team-group-title {
-      font-weight: 700;
-      font-size: 1.05rem;
-      letter-spacing: .02rem;
+      font-weight: 800;
+      font-size: 1.3rem;
+      text-align: center;
       color: #e1e3e8;
     }
     .team-list {
@@ -155,20 +125,13 @@
       text-align: center;
       font-size: .95rem;
     }
-
-    /* Footer */
     .footer {
       border-top: 1px solid #1f1f24;
       padding: 40px 0;
       color: var(--text-muted);
     }
-
-    /* Utilities */
     .muted { color: var(--text-muted); }
-    .divider {
-      height: 1px; background: #1f1f24; width: 100%;
-    }
-
+    .divider { height: 1px; background: #1f1f24; width: 100%; }
     @media (max-width: 576px) {
       .speaker-card { grid-template-columns: 90px 1fr; }
       .speaker-img { width: 90px; height: 90px; }
@@ -180,10 +143,11 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+        <img src="image.png" alt="AFL Logo" style="height:32px; margin-right:8px;">
         TEDx Adana Fen <span class="brand-dot"></span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Menüyü Aç">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMain">
@@ -453,11 +417,12 @@
         <span class="badge text-bg-dark border">Adana Fen Lisesi</span>
       </div>
       <h2 class="section-title mb-4">Adana Fen Lisesi hakkında</h2>
-
       <div class="row g-4">
         <div class="col-lg-8">
           <div class="card-modern p-4 venue-card h-100">
-            <span class="badge rounded-pill mb-2">Konum • Adana</span>
+            <a href="https://adanafenlisesi.meb.k12.tr/" target="_blank" class="badge rounded-pill mb-2 text-decoration-none">
+              Konum • Adana
+            </a>
             <p class="mb-2">
               Adana Fen Lisesi, bilim ve araştırma kültürünü merkezine alan, birçok ulusal başarıya imza atmış köklü bir eğitim kurumudur.
               Modern konferans salonu ve teknik altyapısıyla TEDx etkinlikleri için ideal bir ev sahipliği sunar.
@@ -465,13 +430,8 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card-modern p-4 h-100">
-            <div class="section-kicker mb-2">Öne çıkanlar</div>
-            <ul class="mb-0">
-              <li>Geniş sahne ve profesyonel ışık sistemi</li>
-              <li>Yüksek kaliteli ses ve kayıt altyapısı</li>
-              <li>Çalışma ve networking alanları</li>
-            </ul>
+          <div class="card-modern p-0 h-100">
+            <img src="adanafenlisesi.jpg" alt="Adana Fen Lisesi" class="img-fluid rounded-3">
           </div>
         </div>
       </div>
@@ -488,7 +448,8 @@
       <h2 class="section-title mb-4">Etkinliği mümkün kılan ekip</h2>
 
       <div class="row g-4">
-        <div class="col-lg-4">
+        <!-- İlk satır -->
+        <div class="col-lg-6">
           <div class="card-modern p-4 h-100">
             <div class="team-group-title mb-2">Organizatör</div>
             <div class="team-list" style="grid-template-columns: 1fr;">
@@ -496,7 +457,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <div class="card-modern p-4 h-100">
             <div class="team-group-title mb-2">Co‑Founder</div>
             <div class="team-list" style="grid-template-columns: 1fr;">
@@ -505,6 +466,7 @@
           </div>
         </div>
 
+        <!-- İkinci satır -->
         <div class="col-lg-4">
           <div class="card-modern p-4 h-100">
             <div class="team-group-title mb-2">Media Team</div>
@@ -546,7 +508,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -579,7 +540,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
