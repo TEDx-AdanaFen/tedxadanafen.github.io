@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TEDx Adana Fen</title>
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
 
-  <!-- Open Graph (Sosyal medya kartları) -->
   <meta property="og:title" content="TEDx Adana Fen">
   <meta property="og:description" content="Fikir. Dönüşüm. Gelecek. Adana Fen Lisesi öğrencileri tarafından organize edilen TEDx etkinliği.">
   <meta property="og:image" content="https://www.tedxadanafen.com/favicon.png">
@@ -20,7 +18,6 @@
   <meta property="og:url" content="https://www.tedxadanafen.com">
   <meta property="og:type" content="website">
 
-  <!-- Schema.org: Google için Logo (elindeki tek görsel favicon olduğu için favicon kullanıldı) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,10 +28,8 @@
   }
   </script>
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Özel stil -->
   <style>
     :root {
       --brand-red: #e62b1e;
@@ -64,15 +59,6 @@
     .nav-link:hover,
     .nav-link.active { 
       color: var(--brand-red) !important; 
-    }
-
-    .brand-dot {
-      display: inline-block;
-      width: .65rem;
-      height: .65rem;
-      background: var(--brand-red);
-      border-radius: 50%;
-      margin-left: .25rem;
     }
 
     .btn-brand {
@@ -109,17 +95,6 @@
       background:
         radial-gradient(600px 280px at 88% 15%, rgba(230, 43, 30, .12), transparent 60%),
         radial-gradient(800px 420px at 10% 80%, rgba(255,255,255,.04), transparent 60%);
-    }
-
-    .hero-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      border: 1px solid #26262c;
-      padding: .5rem .75rem;
-      border-radius: 999px;
-      color: var(--text-muted);
-      font-size: .9rem;
     }
 
     .card-modern {
@@ -182,18 +157,9 @@
       border: 1px solid #26262c;
     }
 
-    .speaker-name { 
-      font-weight: 800; 
-    }
-
-    .speaker-role { 
-      color: var(--text-muted); 
-      font-style: italic; 
-    }
-
-    .speaker-bio { 
-      color: #d9dbe1; 
-    }
+    .speaker-name { font-weight: 800; }
+    .speaker-role { color: var(--text-muted); font-style: italic; }
+    .speaker-bio { color: #d9dbe1; }
 
     .venue-card .badge {
       background: rgba(230,43,30,.12);
@@ -230,15 +196,8 @@
       color: var(--text-muted);
     }
 
-    .muted { 
-      color: var(--text-muted); 
-    }
-
-    .divider { 
-      height: 1px; 
-      background: #1f1f24; 
-      width: 100%; 
-    }
+    .muted { color: var(--text-muted); }
+    .divider { height: 1px; background: #1f1f24; width: 100%; }
 
     @media (max-width: 576px) {
       .speaker-card { grid-template-columns: 90px 1fr; }
@@ -248,7 +207,6 @@
 </head>
 <body>
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
@@ -270,21 +228,16 @@
   </div>
 </nav>
 
-<!-- Hero -->
 <section id="home" class="hero">
   <div class="container">
     <div class="row align-items-center gy-4">
       <div class="col-lg-7">
-
-        <!-- Büyük TEDx Logo -->
         <div class="d-flex gap-2">
           <img src="bigtedx.png" alt="TEDx Adana Fen Logo" style="max-width:60%; height:auto;">
         </div>
-
-          <h1 class="display-5 fw-bold" style="color:#e62b1e;">
-            BACK TO FUTURE <br>
-          </h1>
-
+        <h1 class="display-5 fw-bold" style="color:#e62b1e;">
+          BACK TO FUTURE <br>
+        </h1>
       </div>
 
       <div class="col-lg-5">
@@ -292,13 +245,12 @@
           <div>
             <div class="d-flex align-items-center justify-content-between">
               <span class="section-kicker">Etkinlik Özeti</span>
-              <span class="fw-bold text-white fs-3">21 Aralık 2025</span>
-            </div>
+              <span class="fw-bold text-white fs-3">Çok Yakında</span>
             </div>
             <div class="divider my-3"></div>
             <div class="row text-center g-3">
               <div class="col-4">
-                <div class="h4 fw-bold">6</div>
+                <div class="h4 fw-bold">?</div>
                 <div class="muted">Konuşma</div>
               </div>
               <div class="col-4">
@@ -311,7 +263,6 @@
               </div>
             </div>
           </div>
-          <!-- Butonlar en alta taşındı -->
           <div class="mt-4 d-flex gap-2 justify-content-center">
             <a href="#program" class="btn btn-brand btn-lg px-4">Program</a>
             <a href="https://forms.gle/pDcLMb9CJNhDjLCi8" class="btn btn-outline-light btn-lg px-4">Bilet Sorgu</a>
@@ -322,48 +273,45 @@
   </div>
 </section>
   
-  <!-- Hakkımızda -->
-  <section id="hakkimizda" class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="d-flex align-items-center gap-3 mb-2">
-            <span class="section-kicker">Hakkımızda</span>
-            <a href="https://www.ted.com/tedx/events/63622" target="_blank" 
-               class="badge text-bg-dark border text-decoration-none">
-              🔗 TEDx Lisans
-            </a>
-          </div>
-          <h2 class="section-title mb-3">Kısa hikayemiz</h2>
-          <div class="row g-3 mt-4">
-            <div class="col-md-6">
-              <div class="card-modern p-4 h-100">
-                <div class="section-kicker mb-2">Hakkımızda</div>
-                <p>Fikir. Dönüşüm. Gelecek.</p>
-                <p>Adana Fen Lisesi öğrencileri ve topluluğu tarafından organize edilen TEDx, okulumuzun entelektüel merakını sahneye taşıyor.</p>
-                <p>Bu platformda, düşünce kalıplarını zorlayan, tartışmaya değer ve ilham veren konuşmacıları ağırlıyoruz. Bilim, teknoloji ve kişisel gelişime uzanan bir yelpazede, konulara farklı açılardan yaklaşan konuşmalar dinleyeceksiniz.</p>
-              </div>
+<section id="hakkimizda" class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="d-flex align-items-center gap-3 mb-2">
+          <span class="section-kicker">Hakkımızda</span>
+          <a href="https://www.ted.com/tedx/events/63622" target="_blank" class="badge text-bg-dark border text-decoration-none">
+            🔗 TEDx Lisans
+          </a>
+        </div>
+        <h2 class="section-title mb-3">Kısa hikayemiz</h2>
+        <div class="row g-3 mt-4">
+          <div class="col-md-6">
+            <div class="card-modern p-4 h-100">
+              <div class="section-kicker mb-2">Hakkımızda</div>
+              <p>Fikir. Dönüşüm. Gelecek.</p>
+              <p>Adana Fen Lisesi öğrencileri ve topluluğu tarafından organize edilen TEDx, okulumuzun entelektüel merakını sahneye taşıyor.</p>
+              <p>Bu platformda, düşünce kalıplarını zorlayan, tartışmaya değer ve ilham veren konuşmacıları ağırlıyoruz. Bilim, teknoloji ve kişisel gelişime uzanan bir yelpazede, konulara farklı açılardan yaklaşan konuşmalar dinleyeceksiniz.</p>
             </div>
-            <div class="col-md-6">
-              <div class="card-modern p-4 h-100">
-                <div class="section-kicker mb-2" style="color:#e62b1e;">Kimler İçin?</div>
-                <p>Öğrenmeye, sorgulamaya ve dünyayı farklı açılardan anlamlandırmaya istekli her zihin için</p>
-              </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-modern p-4 h-100">
+              <div class="section-kicker mb-2" style="color:#e62b1e;">Kimler İçin?</div>
+              <p>Öğrenmeye, sorgulamaya ve dünyayı farklı açılardan anlamlandırmaya istekli her zihin için</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
- <!-- Program -->
 <section id="program" class="section">
   <div class="container">
     <div class="d-flex align-items-center gap-3 mb-2">
       <span class="section-kicker">Program</span>
-      <span class="badge text-bg-dark border">Akış</span>
+      <span class="badge text-bg-dark border">Geçmiş Akış</span>
     </div>
-    <h2 class="section-title mb-4">Günün akışı</h2>
+    <h2 class="section-title mb-4">Günün akışı (Geçmiş Etkinlik)</h2>
 
     <div class="row g-4">
       <div class="col-lg-8 mx-auto">
@@ -413,22 +361,23 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
   
-<!-- Konuşmacılar -->
 <section id="konusmacilar" class="section">
   <div class="container">
     <div class="d-flex align-items-center gap-3 mb-2">
       <span class="section-kicker">Konuşmacılar</span>
-      <span class="badge text-bg-dark border">Konuşmacılar ve LinkedIn Hesapları</span>
+      <span class="badge text-bg-dark border">Geçmiş Konuşmacılar</span>
     </div>
-    <h2 class="section-title mb-4">Sahnedeki isimler</h2>
+    <h2 class="section-title mb-4">Sahnedeki İsimler</h2>
+
+    <div class="alert alert-dark border-secondary mb-5 text-center" style="background-color: rgba(255,255,255,0.02);" role="alert">
+      <h5 class="fw-bold text-white mb-2" style="color: var(--brand-red) !important;">📢 Bilgilendirme</h5>
+      <p class="mb-0 text-light">Aşağıda yer alan konuşmacılar <strong>geçmiş etkinliğimize</strong> aittir. Yeni etkinliğimizin tarihi ve konuşmacı listesi henüz belli değildir, çok <strong>yakında sizlerle!</strong></p>
+    </div>
 
     <div class="row g-3">
-
-      <!-- 1: Göncü Musa Zeytun -->
       <div class="col-lg-6">
         <div class="card-modern speaker-card">
           <img class="speaker-img" alt="Göncü Musa Zeytun" src="konusmaci1.jpg">
@@ -441,11 +390,11 @@
             <div class="speaker-role">Dostext Yazılım Kurucusu / 1Fikir1Türkiye Organizatörü</div>
             <p class="speaker-bio mb-0">
               Yapay zekâ ve ar alanlarında projeler geliştiren Halk'ın girişimcisidir. İşitme engellilerin iletişimini kolaylaştırmayı amaçlayan Dostext yazılımın kurucusu; 1Fikir1Türkiye Organizatörü ve Mentörüdür.
+            </p>
           </div>
         </div>
       </div>
       
-      <!-- 2: Prof. Dr. Oğuz Yoldaş -->
       <div class="col-lg-6">
         <div class="card-modern speaker-card">
           <img class="speaker-img" alt="Prof. Dr. Oğuz Yoldaş" src="konusmaci3.jpg">
@@ -463,7 +412,6 @@
         </div>
       </div>
 
-      <!-- 3: Seda Saygı Aktaş -->
       <div class="col-lg-6">
         <div class="card-modern speaker-card">
           <img class="speaker-img" alt="Seda Saygı Aktaş" src="konusmaci4.jpg">
@@ -481,7 +429,6 @@
         </div>
       </div>
 
-      <!-- 4: İlker Yörü -->
       <div class="col-lg-6">
         <div class="card-modern speaker-card">
           <img class="speaker-img" alt="İlker Yörü" src="konusmaci5.jpeg">
@@ -499,7 +446,6 @@
         </div>
       </div>
 
-      <!-- 5: Prof. Dr. Orhan Görgülü -->
       <div class="col-lg-6">
         <div class="card-modern speaker-card">
           <img class="speaker-img" alt="Prof. Dr. Orhan Görgülü" src="konusmaci6.png">
@@ -511,13 +457,12 @@
             </div>
             <div class="speaker-role">KBB Uzmanı</div>
             <p class="speaker-bio mb-0">
-              Hacettepe Üniversitesi Tıp Fakültesi mezunu.  Adana Şehir Eğitim ve Araştırma Hastanesi’nde profesör olarak KBB alanında hizmet veriyor.
+              Hacettepe Üniversitesi Tıp Fakültesi mezunu.  Adana Şehir Eğitim ve Araştırma Hastanesi’nde profesör olarak KBB alanında hizmet veriyor.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- 6: Prof. Dr. Mehmet Birhan Yılmaz -->
       <div class="col-lg-6">
         <div class="card-modern speaker-card">
           <img class="speaker-img" alt="Prof. Dr. Mehmet Birhan Yılmaz" src="konusmaci7.jpg">
@@ -530,6 +475,7 @@
             <div class="speaker-role">Profesör Doktor - Rektör Yardımcısı</div>
             <p class="speaker-bio mb-0">
                Kalp yetersizliği ve kardiyovasküler hastalıklar alanındaki akademik çalışmalarıyla tanınan bir kardiyoloji profesörüdür. 9 Eylül Üniversitesi'nde Rektör Yardımcılığı yapmaktadır.
+            </p>
           </div>
         </div>
       </div>
@@ -538,13 +484,11 @@
   </div>
 </section>
   
-<!-- Mekan -->
 <section id="mekan" class="section">
   <div class="container">
     <div class="d-flex align-items-center gap-3 mb-2">
       <span class="section-kicker">Mekan</span>
-      <a href="https://adanafenlisesi.meb.k12.tr/" target="_blank" 
-         class="badge text-bg-dark border text-decoration-none">
+      <a href="https://adanafenlisesi.meb.k12.tr/" target="_blank" class="badge text-bg-dark border text-decoration-none">
         🔗 Adana Fen Lisesi
       </a>
     </div>
@@ -552,8 +496,7 @@
     <div class="row g-4">
       <div class="col-lg-8">
         <div class="card-modern p-4 venue-card h-100">
-          <a href="https://maps.app.goo.gl/1dWCUcwsD653f2hK8" target="_blank" 
-             class="badge rounded-pill mb-2 text-decoration-none">
+          <a href="https://maps.app.goo.gl/1dWCUcwsD653f2hK8" target="_blank" class="badge rounded-pill mb-2 text-decoration-none">
             🔗 Konum • Adana
           </a>
           <p class="mb-2">
@@ -562,120 +505,154 @@
         </div>
       </div>
       <div class="col-lg-4 text-center">
-        <!-- Sadece küçük logo -->
         <img src="image.png" alt="AFL Logo" class="img-fluid" style="max-width:120px; height:auto;">
       </div>
     </div>
   </div>
 </section>
   
-<!-- Kadro -->
 <section id="kadro" class="section">
   <div class="container">
     <div class="d-flex align-items-center gap-3 mb-2">
       <span class="section-kicker">Kadro</span>
-      <a href="https://www.ted.com/tedx/events/63622" target="_blank" 
-         class="badge text-bg-dark border text-decoration-none">
+      <a href="https://www.ted.com/tedx/events/63622" target="_blank" class="badge text-bg-dark border text-decoration-none">
         🔗 TEDx Lisans
       </a>
     </div>
 
-    <!-- Büyük Beyaz Başlık -->
     <h2 class="section-title mb-4">Organizasyon Ekibi</h2>
 
     <div class="row g-4">
-
-      <!-- Organizatör -->
       <div class="col-lg-4">
         <div class="card-modern p-4 h-100">
           <div class="team-group-title mb-2">Organizatör</div>
           <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
             <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #300808;">
-              Alya Erteni
+              Mehmet Ulaç Girgin
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Co-Organizatör -->
       <div class="col-lg-4">
         <div class="card-modern p-4 h-100">
           <div class="team-group-title mb-2">Co-Organizatör</div>
           <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
-            <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #092620;">
-              Ömer Raif Özoğlu
-            </div>
+            <div class="team-pill" style="border:2.5px solid #092620;">Alper Kırsay</div>
+            <div class="team-pill" style="border:2.5px solid #092620;">Oya Pedük</div>
           </div>
         </div>
       </div>
 
-      <!-- Ana Kadro -->
       <div class="col-lg-4">
         <div class="card-modern p-4 h-100">
           <div class="team-group-title mb-2">Ana Kadro</div>
           <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
-            <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #0f2038;">
-              Mehmet Ulaç Girgin
-            </div>
-            <div class="team-pill" style="border:2.5px solid #0f2038;">Sude Söğütlü</div>
-            <div class="team-pill" style="border:2.5px solid #0f2038;">Ali Bera Mert</div>
-            <div class="team-pill" style="border:2.5px solid #0f2038;">Yusuf Tuna Ceylan</div>
-            <div class="team-pill" style="border:2.5px solid #0f2038;">Alper Kırsay</div>
+            <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #0f2038;">Kuzey Çelik</div>
+            <div class="team-pill" style="border:2.5px solid #0f2038;">Duru Körkün</div>
+            <div class="team-pill" style="border:2.5px solid #0f2038;">Meleksu Kara</div>
+            <div class="team-pill" style="border:2.5px solid #0f2038;">Öykü Dağ</div>
+            <div class="team-pill" style="border:2.5px solid #0f2038;">Nehir İmeci</div>
+            <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #0f2038;">Alisa Ece Arabacı</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Diğer Üyeler (kutu dışında) -->
-    <div class="mt-4">
-      <h5 class="text-white fw-bold mb-3">Genel Kadro</h5>
-      <p class="muted">
-        Zehra Çaldır - Elif Su Özdemir - Umut Devrim Deveci - Kuzey Çelik - Yusuf Batuhan Gül - İkra Nur Aydın - Sena Önerden - Duru Hirasu Körkün - Buğlem Nisan Ekinci - Yavuz Emin Kaya - Berat Hüseyin Güllü
-      </p>
+    <div class="text-center mt-5">
+      <button class="btn btn-outline-secondary px-4 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#eskiKadroAlani" aria-expanded="false" aria-controls="eskiKadroAlani">
+        Geçmiş Kadroyu Görüntüle
+      </button>
     </div>
+
+    <div class="collapse mt-4" id="eskiKadroAlani">
+      <div class="divider my-4"></div>
+      <h3 class="section-title mb-4 fs-4 text-center" style="color: var(--text-muted);">Geçmiş Organizasyon Ekibi</h3>
+      <div class="row g-4 opacity-75">
+        <div class="col-lg-4">
+          <div class="card-modern p-4 h-100">
+            <div class="team-group-title mb-2">Organizatör</div>
+            <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
+              <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #300808;">
+                Alya Erteni
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-modern p-4 h-100">
+            <div class="team-group-title mb-2">Co-Organizatör</div>
+            <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
+              <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #092620;">
+                Ömer Raif Özoğlu
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-modern p-4 h-100">
+            <div class="team-group-title mb-2">Ana Kadro</div>
+            <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
+              <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #0f2038;">
+                Mehmet Ulaç Girgin
+              </div>
+              <div class="team-pill" style="border:2.5px solid #0f2038;">Sude Söğütlü</div>
+              <div class="team-pill" style="border:2.5px solid #0f2038;">Ali Bera Mert</div>
+              <div class="team-pill" style="border:2.5px solid #0f2038;">Yusuf Tuna Ceylan</div>
+              <div class="team-pill" style="border:2.5px solid #0f2038;">Alper Kırsay</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 text-center opacity-75">
+        <h5 class="text-white fw-bold mb-2">Genel Kadro</h5>
+        <p class="muted">
+          Zehra Çaldır - Elif Su Özdemir - Umut Devrim Deveci - Kuzey Çelik - Yusuf Batuhan Gül - İkra Nur Aydın - Sena Önerden - Duru Hirasu Körkün - Buğlem Nisan Ekinci - Yavuz Emin Kaya - Berat Hüseyin Güllü
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
   
-  <!-- İletişim -->
-  <section id="iletisim" class="section">
-    <div class="container">
-      <div class="d-flex align-items-center gap-3 mb-2">
-        <span class="section-kicker">İletişim</span>
-        <span class="badge text-bg-dark border">Bağlantı</span>
-      </div>
-      <h2 class="section-title mb-4">Bize ulaşın</h2>
+<section id="iletisim" class="section">
+  <div class="container">
+    <div class="d-flex align-items-center gap-3 mb-2">
+      <span class="section-kicker">İletişim</span>
+      <span class="badge text-bg-dark border">Bağlantı</span>
+    </div>
+    <h2 class="section-title mb-4">Bize ulaşın</h2>
 
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="card-modern p-4 h-100">
-            <div class="mb-2 fw-bold">E‑posta</div>
-            <a class="link-light" href="mailto:tedxadanafen@gmail.com">tedxadanafen@gmail.com</a>
-            <div class="divider my-3"></div>
-            <div class="mb-2 fw-bold">Instagram</div>
-            <a class="link-light" href="https://instagram.com/tedxadanafen" target="_blank">@tedxadanafen</a>
-          </div>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card-modern p-4 h-100">
+          <div class="mb-2 fw-bold">E‑posta</div>
+          <a class="link-light" href="mailto:tedxadanafen@gmail.com">tedxadanafen@gmail.com</a>
+          <div class="divider my-3"></div>
+          <div class="mb-2 fw-bold">Instagram</div>
+          <a class="link-light" href="https://instagram.com/tedxadanafen" target="_blank">@tedxadanafen</a>
         </div>
-        <div class="col-lg-6">
-          <div class="card-modern p-4 h-100">
-            <div class="section-kicker mb-2">Not</div>
-            <p class="mb-0 muted">
-              Basın ve iş birlikleri için e‑posta üzerinden konu başlığını belirtmeniz yanıt süremizi hızlandıracaktır.
-              Bilet satışı için de iletişime geçmeniz gerekmektedir.
-            </p>
-          </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-modern p-4 h-100">
+          <div class="section-kicker mb-2">Not</div>
+          <p class="mb-0 muted">
+            Basın ve iş birlikleri için e‑posta üzerinden konu başlığını belirtmeniz yanıt süremizi hızlandıracaktır.
+            Bilet satışı için de iletişime geçmeniz gerekmektedir.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
-      <div>© 2025 TEDx Adana Fen — Tüm hakları saklıdır.</div>
-      <div class="muted">Bağımsız & topluluk destekli bir TEDx etkinliğidir.</div>
-    </div>
-  </footer>
+<footer class="footer">
+  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+    <div>© 2025 TEDx Adana Fen — Tüm hakları saklıdır.</div>
+    <div class="muted">Bağımsız & topluluk destekli bir TEDx etkinliğidir.</div>
+  </div>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
