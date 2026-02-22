@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TEDx Adana Fen</title>
+  <title>TEDx Adana Fen 2026</title>
 
   <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -176,18 +176,28 @@
 
     .team-list {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: .75rem;
     }
 
     .team-pill {
       background: #131318;
-      border: 1px solid #26262c;
       color: #cfd2d8;
       border-radius: 999px;
-      padding: .5rem .75rem;
+      padding: .6rem .75rem;
       text-align: center;
       font-size: .95rem;
+      font-weight: 500;
+    }
+
+    .sponsor-logo {
+      max-width: 150px;
+      height: auto;
+      filter: grayscale(100%) opacity(0.8);
+      transition: all 0.3s ease;
+    }
+
+    .sponsor-logo:hover {
+      filter: grayscale(0%) opacity(1);
     }
 
     .footer {
@@ -289,14 +299,14 @@
             <div class="card-modern p-4 h-100">
               <div class="section-kicker mb-2">Hakkımızda</div>
               <p>Fikir. Dönüşüm. Gelecek.</p>
-              <p>Adana Fen Lisesi öğrencileri ve topluluğu tarafından organize edilen TEDx, okulumuzun entelektüel merakını sahneye taşıyor.</p>
-              <p>Bu platformda, düşünce kalıplarını zorlayan, tartışmaya değer ve ilham veren konuşmacıları ağırlıyoruz. Bilim, teknoloji ve kişisel gelişime uzanan bir yelpazede, konulara farklı açılardan yaklaşan konuşmalar dinleyeceksiniz.</p>
+              <p>Geçtiğimiz yıl büyük bir coşkuyla ilkini gerçekleştirdiğimiz etkinliğimizin ardından, bu sene <strong>2. kez</strong> Adana Fen Lisesi'nin entelektüel merakını sahneye taşıyoruz.</p>
+              <p>Fikirlerin dönüştürücü gücüne inanan topluluğumuzla, yine düşünce kalıplarını zorlayan, tartışmaya değer ve ilham veren konuşmacıları ağırlayacağız. Bilim, teknoloji ve kişisel gelişime uzanan yelpazemizle ufkunuzu açmaya hazırlanıyoruz.</p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="card-modern p-4 h-100">
               <div class="section-kicker mb-2" style="color:#e62b1e;">Kimler İçin?</div>
-              <p>Öğrenmeye, sorgulamaya ve dünyayı farklı açılardan anlamlandırmaya istekli her zihin için</p>
+              <p>Öğrenmeye, sorgulamaya ve dünyayı farklı açılardan anlamlandırmaya istekli her zihin için. Sınırları aşmak ve yeni fikirlerle tanışmak isteyen herkesi bu dönüştürücü serüvene davet ediyoruz.</p>
             </div>
           </div>
         </div>
@@ -311,12 +321,17 @@
       <span class="section-kicker">Program</span>
       <span class="badge text-bg-dark border">Geçmiş Akış</span>
     </div>
-    <h2 class="section-title mb-4">Günün akışı (Geçmiş Etkinlik)</h2>
+    <h2 class="section-title mb-4">Günün akışı</h2>
+    
+    <div class="alert alert-dark border-danger mb-4 text-center" style="background-color: rgba(230,43,30,0.05);" role="alert">
+      <h5 class="fw-bold mb-1" style="color: var(--brand-red);">TEDx Adana Fen Lisesi 2026 Çok Yakında Sizlerle!</h5>
+      <p class="mb-0 text-light">Yeni programımız açıklanana kadar, ilham veren geçmiş etkinliğimizin akışına ve konuşmacılarına göz atabilirsiniz.</p>
+    </div>
 
     <div class="row g-4">
       <div class="col-lg-8 mx-auto">
         <div class="card-modern p-4 h-100">
-          <div class="timeline">
+          <div class="timeline opacity-75">
             <div class="tl-item d-flex justify-content-between">
               <div class="fw-bold">Kapı Açılış</div>
               <div class="tl-time">12:30</div>
@@ -373,11 +388,11 @@
     <h2 class="section-title mb-4">Sahnedeki İsimler</h2>
 
     <div class="alert alert-dark border-secondary mb-5 text-center" style="background-color: rgba(255,255,255,0.02);" role="alert">
-      <h5 class="fw-bold text-white mb-2" style="color: var(--brand-red) !important;">📢 Bilgilendirme</h5>
-      <p class="mb-0 text-light">Aşağıda yer alan konuşmacılar <strong>geçmiş etkinliğimize</strong> aittir. Yeni etkinliğimizin tarihi ve konuşmacı listesi henüz belli değildir, çok <strong>yakında sizlerle!</strong></p>
+      <h5 class="fw-bold mb-2" style="color: #4d94ff !important;">✨ Sizlere Yeni İlhamlar Arıyoruz!</h5>
+      <p class="mb-0 text-light">Aşağıda yer alan harika isimler geçmiş etkinliğimizden. Ufuk açıcı yepyeni hikayelerle 2026 sahnesinde buluşmak üzere, <strong>çok yakında sizlerle olacağız!</strong></p>
     </div>
 
-    <div class="row g-3">
+    <div class="row g-3 opacity-75">
       <div class="col-lg-6">
         <div class="card-modern speaker-card">
           <img class="speaker-img" alt="Göncü Musa Zeytun" src="konusmaci1.jpg">
@@ -479,7 +494,6 @@
           </div>
         </div>
       </div>
-      
     </div>
   </div>
 </section>
@@ -496,8 +510,8 @@
     <div class="row g-4">
       <div class="col-lg-8">
         <div class="card-modern p-4 venue-card h-100">
-          <a href="https://maps.app.goo.gl/1dWCUcwsD653f2hK8" target="_blank" class="badge rounded-pill mb-2 text-decoration-none">
-            🔗 Konum • Adana
+          <a href="https://maps.app.goo.gl/g1g6Jt6Vz1H9QG8a8" target="_blank" class="badge rounded-pill mb-2 text-decoration-none">
+            📍 Haritada Görüntüle • Adana
           </a>
           <p class="mb-2">
             Adana Fen Lisesi, taş bina mimarisi ve köklü eğitim geleneğiyle yalnızca bir okul değil; bilimsel merakın, sorgulamanın ve özgün düşüncenin hayat bulduğu bir sahnedir. Ulusal ve uluslararası başarılarla güçlenen bu kültür, TED’in “fikirlerin gücüyle dünyayı dönüştürme” vizyonuyla doğal bir uyum içindedir. TEDx Adana Fen, tarihi dokuyla birleşen genç zihinlerin yenilikçi fikirlerini buluşturarak, ilhamın ve bilginin ışığını geleceğe taşıyan benzersiz bir etkinliktir.
@@ -523,37 +537,36 @@
     <h2 class="section-title mb-4">Organizasyon Ekibi</h2>
 
     <div class="row g-4">
-      <div class="col-lg-4">
+      
+      <div class="col-lg-3 col-md-6">
         <div class="card-modern p-4 h-100">
-          <div class="team-group-title mb-2">Organizatör</div>
-          <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
-            <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #300808;">
-              Mehmet Ulaç Girgin
-            </div>
+          <div class="team-group-title mb-3">Organizatör</div>
+          <div class="team-list" style="grid-template-columns: 1fr;">
+            <div class="team-pill" style="border: 2px solid #e62b1e;">Mehmet Ulaç Girgin</div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-3 col-md-6">
         <div class="card-modern p-4 h-100">
-          <div class="team-group-title mb-2">Co-Organizatör</div>
-          <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
-            <div class="team-pill" style="border:2.5px solid #092620;">Alper Kırsay</div>
-            <div class="team-pill" style="border:2.5px solid #092620;">Oya Pedük</div>
+          <div class="team-group-title mb-3">Co-Organizatör</div>
+          <div class="team-list" style="grid-template-columns: 1fr;">
+            <div class="team-pill" style="border: 2px solid #3b82f6;">Alper Kırsay</div>
+            <div class="team-pill" style="border: 2px solid #3b82f6;">Oya Pedük</div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-6 col-md-12">
         <div class="card-modern p-4 h-100">
-          <div class="team-group-title mb-2">Ana Kadro</div>
+          <div class="team-group-title mb-3">Ana Kadro</div>
           <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
-            <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #0f2038;">Kuzey Çelik</div>
-            <div class="team-pill" style="border:2.5px solid #0f2038;">Duru Körkün</div>
-            <div class="team-pill" style="border:2.5px solid #0f2038;">Meleksu Kara</div>
-            <div class="team-pill" style="border:2.5px solid #0f2038;">Öykü Dağ</div>
-            <div class="team-pill" style="border:2.5px solid #0f2038;">Nehir İmeci</div>
-            <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #0f2038;">Alisa Ece Arabacı</div>
+            <div class="team-pill" style="border: 2px solid #8b5cf6;">Kuzey Çelik</div>
+            <div class="team-pill" style="border: 2px solid #8b5cf6;">Duru Körkün</div>
+            <div class="team-pill" style="border: 2px solid #8b5cf6;">Melek Su Kara</div>
+            <div class="team-pill" style="border: 2px solid #8b5cf6;">Öykü Dağ</div>
+            <div class="team-pill" style="border: 2px solid #8b5cf6;">Nehir İmeci</div>
+            <div class="team-pill" style="border: 2px solid #8b5cf6;">Alisa Ece Arabacı</div>
           </div>
         </div>
       </div>
@@ -568,42 +581,40 @@
     <div class="collapse mt-4" id="eskiKadroAlani">
       <div class="divider my-4"></div>
       <h3 class="section-title mb-4 fs-4 text-center" style="color: var(--text-muted);">Geçmiş Organizasyon Ekibi</h3>
+      
       <div class="row g-4 opacity-75">
-        <div class="col-lg-4">
+        <div class="col-lg-3 col-md-6">
           <div class="card-modern p-4 h-100">
-            <div class="team-group-title mb-2">Organizatör</div>
-            <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
-              <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #300808;">
-                Alya Erteni
-              </div>
+            <div class="team-group-title mb-3">Organizatör</div>
+            <div class="team-list" style="grid-template-columns: 1fr;">
+              <div class="team-pill" style="border: 2px solid #e62b1e;">Alya Erteni</div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
+        
+        <div class="col-lg-3 col-md-6">
           <div class="card-modern p-4 h-100">
-            <div class="team-group-title mb-2">Co-Organizatör</div>
-            <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
-              <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #092620;">
-                Ömer Raif Özoğlu
-              </div>
+            <div class="team-group-title mb-3">Co-Organizatör</div>
+            <div class="team-list" style="grid-template-columns: 1fr;">
+              <div class="team-pill" style="border: 2px solid #3b82f6;">Ömer Raif Özoğlu</div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
+        
+        <div class="col-lg-6 col-md-12">
           <div class="card-modern p-4 h-100">
-            <div class="team-group-title mb-2">Ana Kadro</div>
+            <div class="team-group-title mb-3">Ana Kadro</div>
             <div class="team-list" style="grid-template-columns: repeat(2, 1fr);">
-              <div class="team-pill" style="grid-column: span 2; text-align:center; border:2.5px solid #0f2038;">
-                Mehmet Ulaç Girgin
-              </div>
-              <div class="team-pill" style="border:2.5px solid #0f2038;">Sude Söğütlü</div>
-              <div class="team-pill" style="border:2.5px solid #0f2038;">Ali Bera Mert</div>
-              <div class="team-pill" style="border:2.5px solid #0f2038;">Yusuf Tuna Ceylan</div>
-              <div class="team-pill" style="border:2.5px solid #0f2038;">Alper Kırsay</div>
+              <div class="team-pill" style="border: 2px solid #8b5cf6;">Mehmet Ulaç Girgin</div>
+              <div class="team-pill" style="border: 2px solid #8b5cf6;">Sude Söğütlü</div>
+              <div class="team-pill" style="border: 2px solid #8b5cf6;">Ali Bera Mert</div>
+              <div class="team-pill" style="border: 2px solid #8b5cf6;">Yusuf Tuna Ceylan</div>
+              <div class="team-pill" style="border: 2px solid #8b5cf6; grid-column: span 2;">Alper Kırsay</div>
             </div>
           </div>
         </div>
       </div>
+      
       <div class="mt-4 text-center opacity-75">
         <h5 class="text-white fw-bold mb-2">Genel Kadro</h5>
         <p class="muted">
@@ -618,28 +629,51 @@
 <section id="iletisim" class="section">
   <div class="container">
     <div class="d-flex align-items-center gap-3 mb-2">
-      <span class="section-kicker">İletişim</span>
-      <span class="badge text-bg-dark border">Bağlantı</span>
+      <span class="section-kicker">İletişim & Konum</span>
+      <span class="badge text-bg-dark border">Bize Ulaşın</span>
     </div>
-    <h2 class="section-title mb-4">Bize ulaşın</h2>
+    <h2 class="section-title mb-4">Ağımıza Katılın</h2>
 
     <div class="row g-4">
       <div class="col-lg-6">
         <div class="card-modern p-4 h-100">
-          <div class="mb-2 fw-bold">E‑posta</div>
-          <a class="link-light" href="mailto:tedxadanafen@gmail.com">tedxadanafen@gmail.com</a>
+          <div class="mb-2 fw-bold text-white">✉️ E‑posta</div>
+          <a class="link-light text-decoration-none" href="mailto:tedxadanafen@gmail.com">tedxadanafen@gmail.com</a>
+          
           <div class="divider my-3"></div>
-          <div class="mb-2 fw-bold">Instagram</div>
-          <a class="link-light" href="https://instagram.com/tedxadanafen" target="_blank">@tedxadanafen</a>
+          
+          <div class="mb-2 fw-bold text-white">📸 Instagram</div>
+          <a class="link-light text-decoration-none d-flex align-items-center gap-2" href="https://instagram.com/tedxadanafen" target="_blank">
+            <span>@tedxadanafen</span> <span class="badge bg-danger rounded-pill">Takip Et</span>
+          </a>
+
+          <div class="divider my-3"></div>
+
+          <div class="mb-2 fw-bold text-white">📍 Etkinlik Konumu</div>
+          <a class="link-light text-decoration-none" href="https://maps.app.goo.gl/g1g6Jt6Vz1H9QG8a8" target="_blank">
+            Adana Fen Lisesi (Haritada Aç 🔗)
+          </a>
         </div>
       </div>
+      
       <div class="col-lg-6">
-        <div class="card-modern p-4 h-100">
-          <div class="section-kicker mb-2">Not</div>
-          <p class="mb-0 muted">
-            Basın ve iş birlikleri için e‑posta üzerinden konu başlığını belirtmeniz yanıt süremizi hızlandıracaktır.
-            Bilet satışı için de iletişime geçmeniz gerekmektedir.
-          </p>
+        <div class="card-modern p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="section-kicker mb-2">Önemli Not</div>
+            <p class="mb-4 muted">
+              Basın ve iş birlikleri için e‑posta üzerinden konu başlığını net bir şekilde belirtmeniz yanıt süremizi hızlandıracaktır. Bilet satışı ve kayıtlar için ayrıca iletişime geçmeniz veya duyuruları beklemeniz gerekmektedir.
+            </p>
+          </div>
+          
+          <div class="mt-auto">
+            <div class="section-kicker mb-3">Ana Sponsorumuz</div>
+            <div class="d-flex align-items-center gap-3">
+              <a href="#" target="_blank">
+                <img src="sponsor_logo.png" alt="Sponsor Logosu" class="sponsor-logo img-fluid rounded" style="background:#fff; padding:5px; max-height: 60px;">
+              </a>
+              <span class="text-muted small">Sponsor olmak ve detaylı bilgi almak için bizimle iletişime geçebilirsiniz.</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -648,7 +682,7 @@
 
 <footer class="footer">
   <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
-    <div>© 2025 TEDx Adana Fen — Tüm hakları saklıdır.</div>
+    <div>© 2026 TEDx Adana Fen — Tüm hakları saklıdır.</div>
     <div class="muted">Bağımsız & topluluk destekli bir TEDx etkinliğidir.</div>
   </div>
 </footer>
